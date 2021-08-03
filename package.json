@@ -1,0 +1,36 @@
+{
+  "name": "hanzi-view",
+  "version": "0.0.1",
+  "description": " A Taro port of Hanzi Writer",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "main:h5": "dist/index.h5.es.js",
+  "types": "dist/types.d.ts",
+  "repository": "https://b2nil.github.io/hanzi-view",
+  "author": "b2nil",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "node ./build/vite.config.js"
+  },
+  "peerDependencies": {
+    "@tarojs/taro": "^3.3.2",
+    "vue": "^3.1.5"
+  },
+  "dependencies": {
+    "hanzi-writer": "^3.2.0"
+  },
+  "devDependencies": {
+    "@tarojs/components": "^3.3.2",
+    "@tarojs/taro": "^3.3.2",
+    "@types/node": "^16.4.10",
+    "@types/shelljs": "^0.8.9",
+    "shelljs": "^0.8.4",
+    "vite": "^2.4.4",
+    "vue": "^3.1.5"
+  }
+}
