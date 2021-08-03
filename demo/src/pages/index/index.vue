@@ -105,7 +105,7 @@
         class="input"
         type="number"
         :value="size"
-        @change="setSize"
+        @input="setSize"
       >
     </view>
     <view class="flex-view">

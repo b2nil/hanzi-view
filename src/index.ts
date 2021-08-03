@@ -95,7 +95,6 @@ const HanziView = defineComponent({
     })
 
     return {
-      context,
       isQuizzing,
       touchEnd,
       touchMove,
