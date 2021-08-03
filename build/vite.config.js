@@ -7,6 +7,9 @@ const resolveFile = (p) => path.resolve(__dirname, '..', p)
 const peerDeps = Object.keys(pkg.peerDependencies)
 
 const baseUserConfig = {
+  define: {
+    'process.env.TARO_ENV': 'process.env.TARO_ENV'
+  },
   resolve: {
     extensions: ['.js', '.ts']
   },
@@ -51,9 +54,6 @@ const miniappConfig = {
 
 const h5Config = {
   ...baseUserConfig,
-  define: {
-    'process.env.TARO_ENV': 'process.env.TARO_ENV'
-  },
   build: {
     ...baseUserConfig.build,
     lib: {
@@ -67,24 +67,10 @@ async function copyTypes() {
   shell.cp('src/types.d.ts', 'dist/types.d.ts')
 }
 
-async function copyStyle() {
-  shell.cp('src/index.css', 'dist/index.css')
-}
-
-async function renameFileNames() {
-  shell.mv('dist/index.es.js', pkg.module)
-  shell.mv('dist/index.es.js.map', pkg.module + '.map')
-  shell.mv('dist/index.h5.es.js', pkg["main:h5"])
-  shell.mv('dist/index.h5.es.js.map', pkg["main:h5"] + '.map')
-}
-
 async function build() {
   await vite.build(miniappConfig)
-  process.env.TARO_ENV = 'h5'
   await vite.build(h5Config)
-  // await copyStyle()
   await copyTypes()
-  // await renameFileNames()
 }
 
 build()
