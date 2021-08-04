@@ -1,6 +1,9 @@
-import RenderTarget from './RenderTarget'
-import { Ref } from "vue"
-import { CharacterJson, CharDataLoaderFn, OnCompleteFunction, StrokeData } from 'hanzi-writer'
+import type { Ref } from "vue"
+import type { CharacterJson, CharDataLoaderFn, OnCompleteFunction, StrokeData } from 'hanzi-writer'
+
+export class RenderTarget { }
+export class HanziWriterContext { }
+export function createHanziWriterContext (elRef: Ref<any>, options?: Omit<ContextOptions, 'elRef'>): HanziWriterContext
 
 export interface HanziViewProps {
   disableScroll?: boolean

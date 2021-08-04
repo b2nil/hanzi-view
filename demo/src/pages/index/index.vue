@@ -123,10 +123,11 @@
 </template>
 
 <script lang="ts">
-import HanziView, { HanziWriterContext, createHanziWriterContext } from 'hanzi-view'
+import { HanziView, HanziWriterContext, createHanziWriterContext } from 'hanzi-view/dist/index.es'
 import { onMounted, ref } from '@vue/runtime-core'
-import { PickedContextOptions } from 'hanzi-view/dist/types.d.ts'
+import { PickedContextOptions } from 'hanzi-view/dist/types'
 import { reactive, toRefs } from 'vue'
+import 'hanzi-view/dist/style.css'
 
 export default {
   name: 'Index',
@@ -268,6 +269,7 @@ export default {
     border-radius: 5px;
     margin: auto 15px;
     width: 50%;
+    height: 40px;
   }
 
   .grid-bg {
@@ -278,6 +280,8 @@ export default {
     background-color: #346fc2 !important;
     width: 50% !important;
     margin: auto 15px;
+    height: 40px;
+    font-size: 18px;
   }
 
   .btn:last-of-type {

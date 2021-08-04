@@ -12,14 +12,17 @@
   "license": "MIT",
   "files": [
     "dist",
+    "README.md",
     "package.json"
   ],
   "scripts": {
-    "dev": "node ./build/vite.config.js"
+    "build": "node ./build/vite.config.js",
+    "demo:h5": "yarn dev && cd demo && yarn dev:h5",
+    "demo:weapp": "yarn dev && cd demo && yarn dev:weapp"
   },
   "peerDependencies": {
     "@tarojs/taro": "^3.3.2",
-    "vue": "^3.1.5"
+    "vue": "^3.1.0"
   },
   "dependencies": {
     "hanzi-writer": "^3.2.0"
@@ -29,8 +32,10 @@
     "@tarojs/taro": "^3.3.2",
     "@types/node": "^16.4.10",
     "@types/shelljs": "^0.8.9",
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vue/compiler-sfc": "^3.1.5",
     "shelljs": "^0.8.4",
     "vite": "^2.4.4",
-    "vue": "^3.1.5"
+    "vue": "^3.1.0"
   }
 }
