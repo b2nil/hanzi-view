@@ -6,46 +6,15 @@
 
 ## Features
 
-- Added commonly-used background grids: `米`、`田`、`井`、`回`、`口`、`米回`、`田回`
+- Added commonly-used background grids: `口`、`田`、`井`、`回`、`米`、`米回`、`田回`
 
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-  <path d="M50 0 V100 M0 50 H100" stroke="#FFBABA" />
-  <path d="M0 0 L100 100 M100 0 L0 100" stroke="#FFBABA" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-  <path d="M50 0 V100 M0 50 H100" stroke="#FFBABA" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-  <path d='M33 0 V100 M66 0 V100 M0 33 H100 M0 66 H100' stroke="#FFBABA" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-  <path d='M25 25 V75 M25 25 H75 M25 75 H75 M75 25 V75' stroke="#FFBABA" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-  <path d="M50 0 V100 M0 50 H100" stroke="#FFBABA" />
-  <path d='M25 25 V75 M25 25 H75 M25 75 H75 M75 25 V75' stroke="#FFBABA" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" id="grid-background-target">
-  <path d="M0 0 H100 M0 0 V100 M0 100 H100 M100 0 V100" stroke="#FFBABA" stroke-width="4"/>
-  <path d="M50 0 V100 M0 50 H100" stroke="#FFBABA" />
-  <path d="M0 0 L100 100 M100 0 L0 100" stroke="#FFBABA" />
-  <path d='M25 25 V75 M25 25 H75 M25 75 H75 M75 25 V75' stroke="#FFBABA" />
-</svg>
-
+![口](./assets/口.svg)
+![田](./assets/田.svg)
+![井](./assets/井.svg)
+![回](./assets/回.svg)
+![米](./assets/米.svg)
+![田回](./assets/田回.svg)
+![米回](./assets/米回.svg)
 
 ## Basic Usage
 ```html
