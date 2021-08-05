@@ -26,7 +26,7 @@ const config = {
     }
   },
   alias: {
-    'hanzi-view/dist': path.resolve(__dirname, '../..', 'dist'),
+    'hanzi-view': path.resolve(__dirname, '../..'),
   },
   framework: 'vue3',
   mini: {
@@ -50,10 +50,6 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    },
-    webpackChain(chain) {
-      chain.resolve.alias
-        .set('hanzi-view$', path.resolve(__dirname, '../..', 'dist/index.es.js'))
     }
   },
   h5: {
@@ -79,10 +75,6 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    },
-    webpackChain(chain) {
-      chain.resolve.alias
-        .set('hanzi-view$', path.resolve(__dirname, '../..', 'dist/index.h5.es.js'))
     }
   }
 }

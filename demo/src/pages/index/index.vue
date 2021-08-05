@@ -123,13 +123,13 @@
 </template>
 
 <script lang="ts">
-import { HanziView, HanziWriterContext, createHanziWriterContext } from 'hanzi-view/dist/index.es'
-import { onMounted, ref } from '@vue/runtime-core'
+import { HanziView, HanziWriterContext, createHanziWriterContext } from 'hanzi-view'
+import { onMounted, reactive, toRefs, ref, defineComponent } from 'vue'
 import { PickedContextOptions } from 'hanzi-view/dist/types'
-import { reactive, toRefs } from 'vue'
+
 import 'hanzi-view/dist/style.css'
 
-export default {
+export default defineComponent({
   name: 'Index',
   components: {
     HanziView
@@ -236,7 +236,7 @@ export default {
       switchOutline,
     }
   }
-}
+})
 </script>
 
 <style lang="scss">
