@@ -17,8 +17,8 @@
   ],
   "scripts": {
     "build": "node ./build/vite.config.js",
-    "demo:h5": "yarn dev && cd demo && yarn dev:h5",
-    "demo:weapp": "yarn dev && cd demo && yarn dev:weapp"
+    "demo:h5": "yarn build && cd demo && yarn dev:h5",
+    "demo:weapp": "yarn build && cd demo && yarn dev:weapp"
   },
   "peerDependencies": {
     "@tarojs/taro": "^3.3.2",
