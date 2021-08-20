@@ -1,10 +1,7 @@
 <template>
-  <view
-    class="container"
-    :style="containerStyle"
-  >
+  <view class="container" :style="containerStyle">
     <canvas
-      taro-env="weapp"
+      taro-env="mini"
       :style="canvasStyle"
       :id="canvasId"
       :type="type"
@@ -12,7 +9,7 @@
       :disableScroll="disableScroll"
     />
     <view
-      taro-env="weapp"
+      taro-env="mini"
       v-if="isQuizzing"
       class="blocker"
       :catchMove="true"

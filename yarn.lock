@@ -549,6 +549,11 @@ performance-now@^2.1.0:
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+plugin-taro-env@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/plugin-taro-env/-/plugin-taro-env-0.2.0.tgz#6cf52a1754c0522ee26e65d606a53ec65049e0d5"
+  integrity sha512-EkbBF7cGXzOdfwM8ASfzR+sHXU3qDWQLccxQwCiaU+ftp0AY76DvAm5Rfgi63WaIeBPA3IriDHMSfLtyECJTvA==
+
 postcss-modules-extract-imports@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/postcss-modules-extract-imports/-/postcss-modules-extract-imports-3.0.0.tgz#cda1f047c0ae80c97dbe28c3e76a43b88025741d"
@@ -733,6 +738,11 @@ swiper@6.8.0:
   dependencies:
     dom7 "^3.0.0"
     ssr-window "^3.0.0"
+
+taro-plugin-vue@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/taro-plugin-vue/-/taro-plugin-vue-0.3.0.tgz#bfdd30093977ca4fefe2fd2f43c25a30ffe5759c"
+  integrity sha512-KWRCkPN5JsGZ2JOVxPSCjLFKGbl/4vZ4zPUguy4tc4W4w5bVRemevo+b/nNUSHKGbOgcD2qRkaE3MwqCBHpXnA==
 
 to-fast-properties@^2.0.0:
   version "2.0.0"
